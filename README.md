@@ -72,7 +72,7 @@ Run below command to destroy using terraform
 make destroy
 
 make all will run below commands internally
-make plan
+make plan (terraform plan)
 make apply
 make build
 make publish
