@@ -9,7 +9,6 @@ resource "aws_db_subnet_group" "this" {
 
 
 resource "aws_rds_cluster" "this" {
-  identifier ="wordpress"
   database_name                   = "wordpress"
   engine                          = "aurora"
   engine_mode                     = "serverless"
