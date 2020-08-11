@@ -1,6 +1,6 @@
 
 module "aurora" {
-  source                = "git@github.com:terraform-aws-modules/terraform-aws-rds-aurora.git"
+  source                = "https://github.com/terraform-aws-modules/terraform-aws-rds-aurora"
   name                  = "wordpress"
   database_name         = "wordpress"
   engine                = "aurora"
