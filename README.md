@@ -77,6 +77,7 @@ make apply
 make build
 make publish
 make deploy-wp
+make github
 
 ````
 
