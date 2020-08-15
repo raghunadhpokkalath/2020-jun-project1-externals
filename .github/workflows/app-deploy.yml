@@ -4,7 +4,7 @@
 on:
   workflow_run:
     workflows: ["Terraform Apply"]
-    branches: [main]
+    branches: [master]
     types: 
       - completed
     #paths:
