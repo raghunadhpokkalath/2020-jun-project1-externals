@@ -1,3 +1,9 @@
+terraform {
+ backend "s3" {
+  }
+}
+
+
 module "networking" {
   source                 = "./modules/networking"
   your_home_network_cidr = var.your_home_network_cidr
@@ -41,11 +47,11 @@ module "ecs" {
 }
 
 module "rds" {
-  source                 = "./modules/rds-serverless"
-  vpc_id                 = module.networking.vpc_id
-  subnet_private_ids     = module.networking.subnet_private_ids
+  source                  = "./modules/rds-serverless"
+  vpc_id                  = module.networking.vpc_id
+  subnet_private_ids      = module.networking.subnet_private_ids
   allowed_security_group = module.bastion.security_group_id
-  sg_ecs                 = module.ecs.sg_ecs_id
+  sg_ecs                  = module.ecs.sg_ecs_id
 }
 
 module "bastion" {
