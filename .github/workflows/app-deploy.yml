@@ -3,8 +3,8 @@
 # Trigger when commits are pushed to the master branch
 on:
   workflow_run:
-    workflows: ["Terraform Apply"]
-    branches: [main]
+    workflows: ["terraform-apply"]
+    branches: [master]
     types: 
       - completed
     #paths:
