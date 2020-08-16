@@ -2,13 +2,11 @@
 
 # Trigger when commits are pushed to the master branch
 on:
-  workflow_run:
-    workflows: ["terraform-apply"]
-    branches: [master]
-    types: 
-      - completed
-    #paths:
-      #- "docker/**"
+  push:
+    branches:
+      - master
+    paths:
+      - "docker/**"
 
 jobs:
   App-Deploy:
