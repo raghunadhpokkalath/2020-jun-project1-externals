@@ -7,7 +7,7 @@ on:
       - master
 
 jobs:
-  terraform-apply:
+  terraform-plan:
     name: "Terraform Apply"
     runs-on: ubuntu-latest
     steps:
