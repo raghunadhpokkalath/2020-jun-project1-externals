@@ -166,7 +166,7 @@ NOTE : Below changes are needed in github secrets to make CI/CD works.
  
  As a prerequisite perform the below steps before PR/Commit requests.
 
-1. Create/Update following secrets in the  GITHUB Settings -> secrets.
+1. Create/Update following secrets in the  GITHUB Settings -> secrets with proper values
 ```
 AWS_ACCESS_KEY_ID 
 AWS_SECRET_ACCESS_KEY 
